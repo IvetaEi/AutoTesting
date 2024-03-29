@@ -2,14 +2,24 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class TestClass5 {
+//    @BeforeTest
+//    public void SetupWebDriver() {
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--start-maximized");
+//        _globalDriver = new ChromeDriver(options);
+//        _globalDriver.get("https://vynoteka.lt/");
+//        _globalDriver.manage().window().maximize();
+//    }
     public static boolean assertEquals(String actual, String expected) {
         return actual.equals(expected);
     }
